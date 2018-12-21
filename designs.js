@@ -6,7 +6,7 @@ const heightChoice = document.getElementById('inputHeight');
 // When size is submitted by the user, call makeGrid()
 const subSelect = document.getElementById('sizePicker');
 
-//submit button listner that creates grid
+//submit button listener that creates grid
 subSelect.addEventListener('submit',function(evt){
   makeGrid()
   evt.preventDefault();
@@ -29,7 +29,7 @@ function makeGrid() {
     const trTag = document.createElement('tr');
     tableTag.appendChild(trTag);
 
-    //For-loop to create each cell and adding listner to each cell
+    //For-loop to create each cell and adding listener to each cell
     //to change the background color
     for( var j = 0; j < widthChoice.value; j++){
       const tdTag = document.createElement('td');
